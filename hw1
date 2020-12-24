@@ -1,0 +1,12 @@
+value0 = input("Please enter a value")
+value1 = input("Please enter a value")
+value2 = input("Please enter a value")
+value3 = input("Please enter a value")
+value4 = input("Please enter a value")
+
+
+print(type(f'{value0}'))
+print(type("{}".format(value1)))
+print(type(f'{value2}'))
+print(type("{}".format(value3)))
+print(type(f'{value4}'))
