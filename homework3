@@ -1,0 +1,34 @@
+import random
+name = input("Enter your name")
+print("Welcome", name)
+
+words= ['phone','water','flower','book','paper','cat']
+choosen = random.choice(words)
+
+guess = " "
+returned = 6
+
+while returned > 0:
+    wrong = 0
+
+    for char in choosen:
+        if char in guess:
+           print(char)
+        else:
+           print("*")
+           wrong += 1
+
+    if wrong == 0:
+       print("Winner")
+       break
+
+    tahmin = input("Enter a letter")
+    guess += tahmin
+
+    if guess not in choosen:
+        returned -= 1
+        print("Wrong")
+
+        if returned == 0:
+            print("Game end", "Word:", choosen)
+            break
